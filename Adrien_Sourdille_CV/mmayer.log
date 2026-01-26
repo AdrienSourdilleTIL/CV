@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2026.1.26)  26 JAN 2026 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2026.1.26)  26 JAN 2026 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1342,6 +1342,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 58.
+ (mmayer.out) (mmayer.out)
 \@outlinefile=\write6
 \openout6 = `mmayer.out'.
 
@@ -1417,9 +1418,10 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on 
  (C:\Users\AdrienSourdille\Program Files\LaTex\tex/latex/fontawesome5\ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <8> not available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 71.
-<<ot1.cmap>>
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>>
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <7> on input line 71.
+<<omx.cmap>>
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 71.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
@@ -1451,7 +1453,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--120
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 148.
-<tableau-certified-data-analyst.1.png, id=15, 602.25pt x 602.25pt>
+<tableau-certified-data-analyst.1.png, id=18, 602.25pt x 602.25pt>
 File: tableau-certified-data-analyst.1.png Graphic file (type png)
 <use tableau-certified-data-analyst.1.png>
 Package pdftex.def Info: tableau-certified-data-analyst.1.png  used on input line 155.
@@ -1461,7 +1463,7 @@ Overfull \hbox (1.06134pt too wide) in paragraph at lines 154--161
 []$[]$ $[]$  
  []
 
-<Snowpro-core (2).png, id=17, 602.25pt x 602.25pt>
+<Snowpro-core (2).png, id=20, 602.25pt x 602.25pt>
 File: Snowpro-core (2).png Graphic file (type png)
 <use Snowpro-core (2).png>
 Package pdftex.def Info: Snowpro-core (2).png  used on input line 165.
@@ -1471,7 +1473,7 @@ Overfull \hbox (1.06134pt too wide) in paragraph at lines 164--171
 []$[]$ $[]$  
  []
 
-<alteryx-designer-advanced-certification (1).png, id=18, 602.25pt x 602.25pt>
+<alteryx-designer-advanced-certification (1).png, id=21, 602.25pt x 602.25pt>
 File: alteryx-designer-advanced-certification (1).png Graphic file (type png)
 <use alteryx-designer-advanced-certification (1).png>
 Package pdftex.def Info: alteryx-designer-advanced-certification (1).png  used on input line 175.
@@ -1491,40 +1493,29 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on in
 
 [1
 
- <./tableau-certified-data-analyst.1.png> <./Snowpro-core (2).png> <./alteryx-designer-advanced-certification (1).png>] (mmayer.aux)
+{C:/Users/AdrienSourdille/Program Files/LaTex/fonts/enc/dvips/lato/a_cl4kdn.enc}{C:/Users/AdrienSourdille/Program Files/LaTex/fonts/enc/dvips/fontawesome5/fa5free0.enc}{C:/Users/AdrienSourdille/Program Files/LaTex/fonts/enc/dvips/fontawesome5/fa5free2.enc}{C:/Users/AdrienSourdille/Program Files/LaTex/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{C:/Users/AdrienSourdille/Program Files/LaTex/fonts/enc/dvips/lato/a_rt66h3.enc}{C:/Users/AdrienSourdille/Program Files/LaTex/fonts/enc/dvips/fontawesome5/fa5free1.enc} <./tableau-certified-data-analyst.1.png> <./Snowpro-core (2).png> <./alteryx-designer-advanced-certification (1).png>] (mmayer.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `mmayer.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mmayer.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                mmayer
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `mmayer.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'mmayer.run.xml'.
 \openout1 = `mmayer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43461 strings out of 467875
- 880405 string characters out of 5418399
- 1650812 words of memory out of 5000000
- 71730 multiletter control sequences out of 15000+600000
+ 43483 strings out of 467875
+ 880837 string characters out of 5418399
+ 1650940 words of memory out of 5000000
+ 71734 multiletter control sequences out of 15000+600000
  875646 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,7n,121p,1231b,2883s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/AdrienSourdille/Program Files/LaTex/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/AdrienSourdille/Program Files/LaTex/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><C:/Users/AdrienSourdille/Program Files/LaTex/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/AdrienSourdille/Program Files/LaTex/fonts/type1/typoland/lato/Lato-Bold.pfb><C:/Users/AdrienSourdille/Program Files/LaTex/fonts/type1/typoland/lato/Lato-Italic.pfb><C:/Users/AdrienSourdille/Program Files/LaTex/fonts/type1/typoland/lato/Lato-Regular.pfb>
+Output written on mmayer.pdf (1 page, 578029 bytes).
+PDF statistics:
+ 82 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
+ 60 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!pdfTeX error: pdflatex (file fa5free1solid): Font fa5free1solid at 600 not found
- ==> Fatal error occurred, no output PDF file produced!
