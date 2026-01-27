@@ -1,2 +1,8 @@
 # Speed up latexmk-xelatex compilation re pdfx
 $hash_calc_ignore_pattern{'timestamp'} = '^';
+
+# Output PDF to output/ folder
+$out_dir = 'output';
+
+# Keep auxiliary files in aux/ folder (created automatically)
+$aux_dir = 'aux';

@@ -1,0 +1,20 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Auxiliary files folder (latexmk)
+aux/
+
+# Keep output folder but ignore generated PDFs (optional - remove if you want to track PDFs)
+# output/*.pdf

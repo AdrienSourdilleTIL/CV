@@ -1,0 +1,223 @@
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" mmayer.tex
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{AlmostBlack}{HTML}{0D0D0D}
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{SlateGrey}
+\colorlet{heading}{AlmostBlack}
+\colorlet{headingrule}{AlmostBlack}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{AlmostBlack}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+\renewcommand{\taglinefont}{\LARGE\bfseries}
+\usepackage{tikz}
+\newcommand{\maindivider}{%
+  \noindent
+  \begin{tikzpicture}
+    \draw[headingrule, line width=1pt, dash pattern=on 5pt off 2pt] (0,0) -- (\linewidth,0);
+  \end{tikzpicture}\par\vspace{0.3em}%
+}
+\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Adrien Sourdille}
+\tagline{Ingénieur Analytics}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+% \photoL{2cm}{images/Yacht_High,images/Suitcase_High}
+\personalinfo{%
+  \email{adriensourdille99@gmail.com}
+  \phone{+33 (0)7 85 76 66 85}
+  \location{Royaume-Uni, Londres}
+  \linkedin{adrien-sourdille}
+  \github{AdrienSourdilleTIL}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Expérience Professionnelle}
+
+\cvevent{Consultant Data Analyst \& Data Engineer}{The Information Lab}{Février 2023 -- En cours}{Londres, Royaume-Uni}
+\begin{itemize}
+\item Formation intensive de 4 mois suivie de 3 ans de conseil dans divers secteurs. Développement de compétences avancées en Snowflake, GCP, Azure, dbt, Tableau et Alteryx, ainsi qu'en gestion de clients et présentation.
+\end{itemize}
+
+\maindivider
+
+\cvevent{Data Engineer}{Virgin Media O2}{Août 2025 -- En cours}{Londres, Royaume-Uni}
+
+\begin{itemize}
+\item Conception d'un pipeline reliant données réseau et métriques clients, mesurant l'impact d'un investissement de 700M£ sur la performance, satisfaction, churn et revenus.
+\end{itemize}
+\vspace{0.1cm}
+\cvtag{GCP}
+\cvtag{SQL}
+\cvtag{dbt}
+\cvtag{Jira}
+\cvtag{Gitlab}
+
+\divider
+
+\cvevent{Data Engineer}{Prêt a Manger}{Novembre 2024 -- Juin 2025}{Londres, Royaume-Uni}
+\begin{itemize}
+\item Pipelines ETL Snowflake pour traiter les commandes de centaines de magasins dans 5 pays. Scripts SQL et JSON pour structurer les données de CA, stocks, taxes et pertes.
+\item Migration SQL Server vers Snowflake, générant des économies de plusieurs millions de livres.
+\item Refonte du rapport "Active Till", automatisation du pipeline et réduction du temps de reporting de 80\%.
+\end{itemize}
+\vspace{0.1cm}
+\cvtag{Snowflake}
+\cvtag{SQL}
+\cvtag{Github}
+\cvtag{Javascript}
+\cvtag{Jira}
+\cvtag{GCP}
+\cvtag{Azure}
+
+\divider
+
+\cvevent{Data Analyst}{BAE Systems}{Juin 2023 -- Juin 2024}{Londres, Royaume-Uni}
+\begin{itemize}
+\item Automatisation d'un rapport financier R\&D via Alteryx et dashboard Tableau sur Tableau Server.
+\item Dashboard Tableau pour identifier et suivre les investissements technologiques de plusieurs millions de livres.
+\end{itemize}
+\vspace{0.1cm}
+\cvtag{Tableau Suite}
+\cvtag{Alteryx Suite}
+\cvtag{Jira}
+
+\switchcolumn
+
+\cvsection{Formation}
+
+\cvevent{Master en Science des Données Géographiques}{London School of Economics (LSE)}{2021 -- 2022}{Londres, Royaume-Uni}
+\begin{itemize}
+\item Apprentissage par renforcement, économie environnementale, SIG et analyse spatiale
+\item Recherche causale et méthodes scientifiques rigoureuses
+\end{itemize}
+
+
+\cvsection{Profil}
+
+
+{\color{SlateGrey} \itshape \normalsize
+Ingénieur Analytics avec 3 ans d'expérience conseil, spécialisé en solutions data orientées client. Expertise en Snowflake, dbt, Tableau et Alteryx. Motivé par l'utilisation de la data pour la durabilité environnementale et la transition énergétique.
+}
+
+\cvsection{Certifications}
+
+\begin{minipage}[c]{0.08\linewidth}
+  \includegraphics[width=\linewidth]{images/tableau-certified-data-analyst.png}
+\end{minipage}%
+\hspace{0.5em}%
+\begin{minipage}[c]{0.9\linewidth}
+  \textbf{Tableau Data Analyst}
+\end{minipage}
+
+\vspace{0.5em}
+
+\begin{minipage}[c]{0.08\linewidth}
+  \includegraphics[width=\linewidth]{images/Snowpro-core.png}
+\end{minipage}%
+\hspace{0.5em}%
+\begin{minipage}[c]{0.9\linewidth}
+  \textbf{SnowPro Core}
+\end{minipage}
+
+\vspace{0.5em}
+
+\begin{minipage}[c]{0.08\linewidth}
+  \includegraphics[width=\linewidth]{images/alteryx-designer-advanced-certification.png}
+\end{minipage}%
+\hspace{0.5em}%
+\begin{minipage}[c]{0.9\linewidth}
+  \textbf{Alteryx Designer Advanced}
+\end{minipage}
+
+
+\cvsection{Compétences Techniques}
+
+% Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+
+% The `ragged2e` document class option might cause automatic linebreaks between \cvtag to fail.
+% Either remove the ragged2e option; or
+% add \LaTeXraggedright in the paragraph for these \cvtag
+\cvtag{Tableau Suite}
+\cvtag{Alteryx Suite}
+\cvtag{SQL}
+\cvtag{dbt}
+\cvtag{Javascript}
+\cvtag{Python}
+\cvtag{Jira}
+\cvtag{Github}
+\cvtag{Gitlab}
+\cvtag{Snowflake}
+\cvtag{GCP}
+\cvtag{Azure}
+
+\cvsection{Langues}
+
+\cvskill{Anglais}{5}
+% \divider
+
+\cvskill{Français}{5}
+% \divider
+
+\cvskill{Italien}{3.5} %% supports X.5 values.
+
+\vspace{0.5cm}
+
+\href{https://adriensourdilletil.github.io/AdrienSourdillePortfolio/}{\briefcase\ Visiter mon Portfolio}
+
+\vspace{0.25cm}
+
+\href{https://public.tableau.com/app/profile/adrien.sourdille4093/vizzes}{\homepage\ Visiter mon Tableau Public}
+
+
+\end{paracol}
+
+\end{document}
