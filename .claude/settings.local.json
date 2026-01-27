@@ -8,7 +8,8 @@
       "mcp__filesystem__move_file",
       "Bash(where:*)",
       "Bash(pdftoppm:*)",
-      "Bash(pdflatex:*)"
+      "Bash(pdflatex:*)",
+      "Bash(dir:*)"
     ]
   }
 }
