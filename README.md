@@ -7,19 +7,19 @@ Available in English and French, built with LaTeX using the [AltaCV](https://git
 ## Preview
 
 ### English Version
-<img src="images/previews/CV_EN.png" alt="CV English" width="400">
+<img src="Adrien_Sourdille_CV/images/previews/CV_EN.png" alt="CV English" width="400">
 
-[Download PDF](output/CV_EN.pdf)
+[Download PDF](Adrien_Sourdille_CV/output/CV_EN.pdf)
 
 ### French Version
-<img src="images/previews/CV_FR.png" alt="CV French" width="400">
+<img src="Adrien_Sourdille_CV/images/previews/CV_FR.png" alt="CV French" width="400">
 
-[Download PDF](output/CV_FR.pdf)
+[Download PDF](Adrien_Sourdille_CV/output/CV_FR.pdf)
 
 ## Structure
 
 ```
-.
+Adrien_Sourdille_CV/
 ├── CV_EN.tex          # English CV source
 ├── CV_FR.tex          # French CV source
 ├── images/            # Certification logos & assets
@@ -30,9 +30,10 @@ Available in English and French, built with LaTeX using the [AltaCV](https://git
 
 ## Build
 
-Compile with `latexmk`:
+Navigate to the CV folder and compile:
 
 ```bash
+cd Adrien_Sourdille_CV
 latexmk -pdf CV_EN.tex
 latexmk -pdf CV_FR.tex
 ```
