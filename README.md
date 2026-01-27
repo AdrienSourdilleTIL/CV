@@ -2,8 +2,6 @@
 
 Personal CV repository for **Adrien Sourdille**, Analytics Engineer with 3 years of experience across various industries.
 
-Available in English and French, built with LaTeX using the [AltaCV](https://github.com/liantze/AltaCV) template.
-
 ## Preview
 
 ### English Version
